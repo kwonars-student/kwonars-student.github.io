@@ -1,66 +1,182 @@
-<!DOCTYPE html>
-<html lang="ko">
+<!doctype html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Homepage</title>
-
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f5f5f5;
-      color: #222;
-    }
-
-    .container {
-      max-width: 720px;
-      margin: 80px auto;
-      padding: 40px;
-      background: white;
-      border-radius: 16px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-      text-align: center;
-    }
-
-    h1 {
-      margin-bottom: 12px;
-    }
-
-    p {
-      line-height: 1.7;
-      color: #555;
-    }
-
-    a {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 12px 20px;
-      background: #222;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-    }
-
-    a:hover {
-      background: #444;
-    }
-  </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="SoonUk Kwon — HCI/XR researcher focused on environment-adaptive interfaces and real-world spatial computing." />
+  <meta name="theme-color" content="#f5f3ee" />
+  <title>SoonUk Kwon — HCI/XR Researcher</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
 </head>
-
 <body>
-  <main class="container">
-    <h1>Hello 👋</h1>
+  <a class="skip" href="#main">Skip to content</a>
 
-    <p>
-      I'm a researcher.<br>
-      Welcome.
-    </p>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="SoonUk Kwon home">SK</a>
+    <nav aria-label="Primary navigation">
+      <a href="#research">Research</a>
+      <a href="#ongoing">Ongoing</a>
+      <a href="#about">About</a>
+      <a href="assets/SoonUk_Kwon_CV.pdf" class="nav-cv">CV</a>
+    </nav>
+  </header>
 
-    <a href="https://github.com/">
-      GitHub Link
-    </a>
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-copy">
+        <p class="eyebrow">HCI/XR Researcher · Environment-Adaptive Interfaces</p>
+        <h1>Focused on <em>Reality</em>,<br />not just <em>Virtuality</em>.</h1>
+        <p class="hero-summary">
+          I study spatial computing that adapts to people, their activities, and the physical world—without disrupting everyday life.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#research">Selected research</a>
+          <a class="button ghost" href="https://scholar.google.com/citations?user=R2hdLoYAAAAJ" target="_blank" rel="noreferrer">Google Scholar ↗</a>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-label="Diagram showing virtual interfaces adapting around physical reality">
+        <svg viewBox="0 0 720 520" role="img" aria-labelledby="hero-title hero-desc">
+          <title id="hero-title">Reality-aware spatial interface</title>
+          <desc id="hero-desc">A person interacts with a spatial interface that bends around real objects and preserves a safe path through the environment.</desc>
+          <defs>
+            <linearGradient id="sheet" x1="0" x2="1" y1="0" y2="1">
+              <stop offset="0" stop-color="#6c7cff" stop-opacity=".92"/>
+              <stop offset="1" stop-color="#93a0ff" stop-opacity=".56"/>
+            </linearGradient>
+            <filter id="shadow" x="-40%" y="-40%" width="180%" height="180%">
+              <feDropShadow dx="0" dy="18" stdDeviation="20" flood-opacity=".14"/>
+            </filter>
+          </defs>
+          <rect x="28" y="28" width="664" height="464" rx="34" fill="#ebe7df"/>
+          <path d="M80 410 C178 350 230 420 334 370 S515 330 638 396" fill="none" stroke="#c5bfb5" stroke-width="2" stroke-dasharray="8 9"/>
+          <rect x="455" y="246" width="118" height="112" rx="18" fill="#cbc5ba"/>
+          <rect x="126" y="318" width="116" height="68" rx="16" fill="#d8d2c8"/>
+          <circle cx="334" cy="184" r="24" fill="#242321"/>
+          <path d="M334 211 C326 258 330 298 336 352" fill="none" stroke="#242321" stroke-width="15" stroke-linecap="round"/>
+          <path d="M333 247 L272 292" fill="none" stroke="#242321" stroke-width="13" stroke-linecap="round"/>
+          <path d="M335 247 L397 278" fill="none" stroke="#242321" stroke-width="13" stroke-linecap="round"/>
+          <path d="M336 348 L298 416" fill="none" stroke="#242321" stroke-width="14" stroke-linecap="round"/>
+          <path d="M337 348 L382 416" fill="none" stroke="#242321" stroke-width="14" stroke-linecap="round"/>
+          <path d="M175 145 C268 95 401 92 562 142 L562 236 C493 214 450 197 405 204 C353 212 315 255 262 246 C227 240 202 224 175 215 Z" fill="url(#sheet)" filter="url(#shadow)"/>
+          <path d="M404 205 C439 198 480 212 562 236" fill="none" stroke="#f5f3ee" stroke-width="5" stroke-linecap="round" opacity=".9"/>
+          <circle cx="518" cy="308" r="52" fill="none" stroke="#f05b3f" stroke-width="3" opacity=".7"/>
+          <path d="M475 367 C451 385 434 404 421 428" fill="none" stroke="#f05b3f" stroke-width="3" stroke-dasharray="6 7"/>
+          <text x="84" y="84" font-size="14" letter-spacing="2" fill="#6a655d">VIRTUAL LAYER</text>
+          <text x="84" y="462" font-size="14" letter-spacing="2" fill="#6a655d">PHYSICAL REALITY</text>
+        </svg>
+      </div>
+    </section>
+
+    <section class="principle" aria-label="Research principle">
+      <p>My research starts where XR meets reality:</p>
+      <div class="principle-track" aria-hidden="true">
+        <span>space</span><i>→</i><span>attention</span><i>→</i><span>safety</span><i>→</i><span>adaptation</span>
+      </div>
+    </section>
+
+    <section class="section" id="research">
+      <div class="section-heading">
+        <p class="eyebrow">Selected Research Contributions</p>
+        <h2>Reality is the constraint,<br />not the afterthought.</h2>
+        <p>Each project starts with a real-world problem created or amplified by immersive computing.</p>
+      </div>
+
+      <article class="project feature">
+        <div class="project-visual panel-cameo" aria-hidden="true">
+          <svg viewBox="0 0 760 460">
+            <rect width="760" height="460" rx="26" fill="#ece8e0"/>
+            <rect x="488" y="225" width="132" height="126" rx="20" fill="#c7c1b6"/>
+            <rect x="128" y="278" width="112" height="72" rx="18" fill="#d8d2c8"/>
+            <path d="M120 135 C250 77 414 81 638 132 L638 228 C552 207 499 184 447 195 C379 209 352 251 289 245 C224 238 169 210 120 203 Z" fill="#6e7ef2" opacity=".82"/>
+            <path d="M450 195 C505 185 550 208 638 228" fill="none" stroke="#fff" stroke-width="5" opacity=".78"/>
+            <circle cx="348" cy="292" r="13" fill="#252421"/>
+            <path d="M348 307 L348 362 M348 331 L298 347 M348 331 L398 336 M348 360 L315 412 M348 360 L386 412" stroke="#252421" stroke-width="10" stroke-linecap="round"/>
+            <path d="M478 374 C446 385 422 397 399 419" fill="none" stroke="#f05b3f" stroke-width="4" stroke-dasharray="8 8"/>
+          </svg>
+        </div>
+        <div class="project-copy">
+          <div class="meta">CHI 2026 · First Author</div>
+          <h3>Draped Surfaces</h3>
+          <p class="problem"><strong>When virtual interfaces obscure the real world:</strong> adaptive and ambient MR interfaces preserve awareness of surrounding space and objects.</p>
+          <div class="evidence">
+            <span>MR prototyping</span><span>Computational analysis</span><span>User study</span>
+          </div>
+          <p class="role"><strong>Contribution:</strong> Turned a spatial constraint into a working interaction system and validated its human trade-offs.</p>
+        </div>
+      </article>
+
+      <div class="project-grid">
+        <article class="project compact">
+          <div class="mini-visual attention" aria-hidden="true">
+            <span class="eye">◉</span><span class="arrow">→</span><span class="task">real task</span>
+            <span class="finger">☝</span><span class="ui">UI</span>
+          </div>
+          <div class="meta">ISMAR 2024 · Co-author</div>
+          <h3>Eyes-Free On-Finger Interaction</h3>
+          <p class="problem"><strong>When interfaces compete with real-world tasks for attention:</strong> tactile and proprioceptive cues support eyes-free secondary interaction.</p>
+        </article>
+
+        <article class="project compact">
+          <div class="mini-visual walking" aria-hidden="true">
+            <div class="real-boundary"></div><div class="virtual-path"></div><span>VR</span>
+          </div>
+          <div class="meta">ISMAR 2022 · First Author</div>
+          <h3>Infinite Virtual Space</h3>
+          <p class="problem"><strong>When VR hides the real world during walking:</strong> generated safely walkable virtual spaces that respect physical-space constraints.</p>
+        </article>
+
+        <article class="project compact">
+          <div class="mini-visual multi" aria-hidden="true">
+            <span class="u u1"></span><span class="u u2"></span><span class="u u3"></span><span class="split s1"></span><span class="split s2"></span>
+          </div>
+          <div class="meta">SIGGRAPH 2022 / ACM TOG · Co-author</div>
+          <h3>Dynamic Multi-User Space Partitioning</h3>
+          <p class="problem"><strong>When multiple VR users risk physical collisions:</strong> computational geometry dynamically allocates safe walking areas.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section ongoing" id="ongoing">
+      <div class="section-heading slim">
+        <p class="eyebrow">Additional Research</p>
+        <h2>Extending the same question into everyday computing.</h2>
+      </div>
+      <div class="ongoing-grid">
+        <article><span>Under review · First author</span><h3>Novel Form Factor for On-Demand Smart Glasses</h3><p>Rethinking how spatial computing devices enter everyday use.</p></article>
+        <article><span>Under review · Co-author</span><h3>Data Visualization with Everyday Objects</h3><p>Exploring physical objects as information-bearing interfaces.</p></article>
+        <article><span>Under review · Co-author</span><h3>Quantifying Complexity in User Interfaces</h3><p>Building measurable ways to reason about interface complexity.</p></article>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="about-card">
+        <div>
+          <p class="eyebrow">Research Direction</p>
+          <h2>When should a spatial interface adapt?</h2>
+        </div>
+        <p>
+          I am interested in how interfaces can respond to changes in activity, attention, and physical context while remaining predictable to the people using them.
+        </p>
+      </div>
+      <div class="profile-row">
+        <div>
+          <h3>SoonUk Kwon</h3>
+          <p>Ph.D. Researcher in Computer Science<br />University of British Columbia</p>
+        </div>
+        <div class="profile-links">
+          <a href="https://scholar.google.com/citations?user=R2hdLoYAAAAJ" target="_blank" rel="noreferrer">Scholar ↗</a>
+          <a href="assets/SoonUk_Kwon_CV.pdf">CV ↗</a>
+          <a href="mailto:YOUR_EMAIL@EXAMPLE.COM">Email ↗</a>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <footer>
+    <span>© <span id="year"></span> SoonUk Kwon</span>
+    <span>Built for clarity: problem → contribution → evidence.</span>
+  </footer>
 </body>
 </html>
